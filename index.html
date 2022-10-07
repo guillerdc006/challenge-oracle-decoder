@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Guillermo Dominguez C.">
+    <meta name="description" content="Página para encriptar y desencriptar texto">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <img src="./Logo.png" alt="Logo de Alura proporcionada en el programa One">
+    </header>
+    <main>
+        <section class="main-left">
+            <textarea class="input-texto" cols="40" rows="6" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="botones-left">
+                <button class="encriptar boton" onclick="btn_encriptar()">
+                    Encriptar
+                </button>
+                <button class="desencriptar boton" onclick="btn_desencriptar()">
+                    Desencriptar
+                </button>
+            </div>
+        </section>
+        <section class="main-right">
+            <textarea class="mensaje" cols="18" rows="8"></textarea>
+            <button class="boton boton-copiar" id="boton_copiar" onclick="copiar()">
+                Copiar
+            </button>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

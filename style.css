@@ -1,0 +1,109 @@
+/* Reglas generales */
+body{
+    background: #F3F5FC;
+}
+
+.boton{
+    width: 300px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* Cabecera */
+header{
+    margin: 40px 0 40px 84px;
+}
+
+/* Main */
+
+main{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+
+.main-left{   
+    width: 60%;
+    margin: 20px auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .main-left{
+        width: 100%;
+    }
+}
+
+.input-texto{
+    
+    max-width: 577px;
+    height: 600px;
+    margin: 20px 10px;
+    border-style: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+    background-color: #F3F5FC;
+}
+
+.input-texto::placeholder{
+    color: #0A3871;
+}
+
+.botones-left{
+    margin: 20px auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.encriptar, .desencriptar{
+    margin: 10px 10px;
+}
+
+.main-right{
+    width: 40%;
+    margin: 20px auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.mensaje{
+    width: 90%;
+    height: 600px;
+    margin-bottom: 20px;
+    border-radius: 32px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #495057;
+    padding: 10px 10px;
+    background-image: url("./Muneco.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (max-width: 768px) {
+    .main-right{
+        width: 100%;
+    }
+    .mensaje{
+        width: 70%;
+    }
+}
+
+.boton-copiar{
+    display: none;
+}
